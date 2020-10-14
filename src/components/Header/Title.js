@@ -4,7 +4,7 @@ import './index.scss';
 const Title = ({text}) => {
     return (
         <div>
-            {text}
+            <a href='/'>{text}</a>
         </div>
      );
 }

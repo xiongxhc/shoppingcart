@@ -1,4 +1,5 @@
 $fontcolor: rgb(226, 226, 226);
+$selectioncolor: rgb(180, 180, 180);
 $backgroundcolor: rgb(9, 46, 48);
 
 .header {
@@ -8,10 +9,16 @@ $backgroundcolor: rgb(9, 46, 48);
     justify-content: flex-start;
     background-color: $backgroundcolor;
     div {
+        padding: 2rem;
+        font-size: 3rem;
         font-family: Tahoma, sans-serif;
-        color: $fontcolor;
-        font-size: 2rem;
-        padding: 1rem;
+        a:hover {
+            color: $selectioncolor;
+        }
+        a {
+            color: $fontcolor;
+            text-decoration: none;
+        }
     }
 }
 
