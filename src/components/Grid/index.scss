@@ -1,5 +1,6 @@
 $fontcolor: rgb(20, 20, 20);
-$backgroundcolor: rgb(255, 255, 255);
+$backgroundcolor: rgb(235, 235, 235);
+$itembackgroundcolor: rgb(255, 255, 255);
 
 .grid {
     flex: 10;
@@ -8,4 +9,19 @@ $backgroundcolor: rgb(255, 255, 255);
     align-items: center;
     justify-content: center;
     background-color: $backgroundcolor;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    flex: 1;
+    height: 40rem;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: $itembackgroundcolor;
 }

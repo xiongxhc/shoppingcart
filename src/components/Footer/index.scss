@@ -8,4 +8,8 @@ $backgroundcolor: rgb(26, 26, 26);
     align-items: center;
     justify-content: center;
     background-color: $backgroundcolor;
+    div {
+        padding: 10rem;
+        font-size: 1.5rem;
+    }
 }

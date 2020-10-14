@@ -4,7 +4,7 @@ import './index.scss';
 const Footer = () => {
     return ( 
         <footer className="footer">
-            © EStore 2020
+            <div>© EStore 2020</div>
         </footer>
      );
 }
