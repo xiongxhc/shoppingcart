@@ -1,0 +1,11 @@
+$fontcolor: whitesmoke;
+$backgroundcolor: rgb(26, 26, 26);
+
+.footer {
+    flex: 1;
+    color: $fontcolor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $backgroundcolor;
+}

@@ -1,0 +1,17 @@
+$fontcolor: rgb(226, 226, 226);
+$backgroundcolor: rgb(9, 46, 48);
+
+.header {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: $backgroundcolor;
+    div {
+        font-family: Tahoma, sans-serif;
+        color: $fontcolor;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+}
+

@@ -1,8 +1,9 @@
 import React from 'react';
+import './index.scss';
 
 const Footer = () => {
     return ( 
-        <footer>
+        <footer className="footer">
             © EStore 2020
         </footer>
      );

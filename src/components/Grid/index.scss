@@ -1,0 +1,11 @@
+$fontcolor: rgb(20, 20, 20);
+$backgroundcolor: rgb(255, 255, 255);
+
+.grid {
+    flex: 10;
+    color: $fontcolor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $backgroundcolor;
+}

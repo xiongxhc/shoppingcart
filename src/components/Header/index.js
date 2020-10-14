@@ -1,9 +1,11 @@
 import React from 'react';
+import './index.scss';
+import Title from './Title.js'
 
 const Header = () => {
     return ( 
-        <header>
-            <div href="/">EStore</div>
+        <header className="header">
+            <Title text={"EStore"}/>
         </header>
      );
 }
