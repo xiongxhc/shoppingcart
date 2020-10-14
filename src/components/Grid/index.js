@@ -4,7 +4,9 @@ import './index.scss';
 const Grid = () => {
     return ( 
         <div className="grid"> 
-            ###GRID###
+            <div>
+                
+            </div>
         </div>
      );
 }
