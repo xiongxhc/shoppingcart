@@ -18,7 +18,7 @@ class Grid extends Component {
 								</a>
 								<div>
 									<div className="pricetag">
-											{item.price}
+										{item.price}
 									</div>
 									<button className="addtocart">
 										Add To Cart
