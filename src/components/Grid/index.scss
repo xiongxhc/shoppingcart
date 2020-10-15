@@ -2,12 +2,41 @@ $fontcolor: rgb(20, 20, 20);
 $backgroundcolor: rgb(235, 235, 235);
 $itembackgroundcolor: rgb(255, 255, 255);
 
+.topbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    justify-content: space-between;
+}
+.search {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-left: 5rem;
+    p {
+        margin: 0.5rem;
+        font-size: 1.2rem;
+    }
+}
+.filter {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-right: 5rem;
+    p {
+        margin: 0.5rem;
+        font-size: 1.2rem;
+    }
+}
+
 .grid {
     flex: 10;
     color: $fontcolor;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     background-color: $backgroundcolor;
 }
 
