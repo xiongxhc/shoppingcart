@@ -19,11 +19,9 @@ class App extends React.Component {
 	searching = (e) => {
 		const { value } = e.target;
 		const searchValue = value.toString().toLowerCase();
-		console.log(searchValue)
-		
 		this.setState({
 			search: searchValue,
-			products: data.Products.filter(each => each.name.toString().toLowerCase().includes(searchValue))
+			products: this.state.products.filter(each => each.name.toString().toLowerCase().includes(searchValue))
 		})
 	}
 
@@ -31,14 +29,14 @@ class App extends React.Component {
 		const { value } = e.target;
 		if (value === "low") {
 			this.setState({
-				filter: e.target.value,
-				products: data.Products.sort((a, b) => parseFloat(a.price) - parseFloat(b.price))
+				filter: value,
+				products: this.state.products.sort((a, b) => parseFloat(a.price) - parseFloat(b.price))
 			})
 		}
 		if (value === "high") {
 			this.setState({
-				filter: e.target.value,
-				products: data.Products.sort((a, b) => parseFloat(b.price) - parseFloat(a.price))
+				filter: value,
+				products: this.state.products.sort((a, b) => parseFloat(b.price) - parseFloat(a.price))
 			})
 		}
 	}
