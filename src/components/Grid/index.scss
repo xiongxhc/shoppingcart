@@ -60,6 +60,9 @@ $itembackgroundcolor: rgb(255, 255, 255);
     }
 }
 
+.addtocart:focus {
+    outline:none;
+}
 .addtocart:hover {
     border: solid;
     border-width: 0.1rem;
