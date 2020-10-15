@@ -14,6 +14,7 @@ $itembackgroundcolor: rgb(255, 255, 255);
     flex-direction: row;
     margin-top: 1rem;
     margin-left: 5rem;
+    margin-bottom: 1rem;
     p {
         margin: 0.5rem;
         font-size: 1.2rem;
@@ -24,6 +25,7 @@ $itembackgroundcolor: rgb(255, 255, 255);
     flex-direction: row;
     margin-top: 1rem;
     margin-right: 5rem;
+    margin-bottom: 1rem;
     p {
         margin: 0.5rem;
         font-size: 1.2rem;
@@ -45,6 +47,16 @@ $itembackgroundcolor: rgb(255, 255, 255);
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+.empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+        font-size: 2rem;
+        padding: 2rem;
+        color: gray;
+    }
 }
 
 .item:hover {
