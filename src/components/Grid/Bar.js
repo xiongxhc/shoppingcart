@@ -10,9 +10,9 @@ const Bar = ({count}) => {
             <div className="filter">
                 <p>Filter</p> 
                 <select>
-                    <option disabled selected value> select an option </option>
-                    <option value={0}>Highest Price</option>
-                    <option value={1}>Lowest Price</option>
+                    <option disabled value> select an option </option>
+                    <option value="high">Highest Price</option>
+                    <option value="low">Lowest Price</option>
                 </select>
             </div>
         </div>
