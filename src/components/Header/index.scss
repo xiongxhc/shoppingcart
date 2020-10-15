@@ -1,24 +1,57 @@
 $fontcolor: rgb(226, 226, 226);
-$selectioncolor: rgb(180, 180, 180);
+$selectioncolor: rgb(0, 110, 255);
 $backgroundcolor: rgb(9, 46, 48);
 
 .header {
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     background-color: $backgroundcolor;
-    div {
-        padding: 2rem;
-        font-size: 3rem;
-        font-family: Tahoma, sans-serif;
-        a:hover {
-            color: $selectioncolor;
-        }
-        a {
-            color: $fontcolor;
-            text-decoration: none;
-        }
+}
+
+.title {
+    padding: 2rem;
+    font-size: 3rem;
+    font-family: Tahoma, sans-serif;
+    a:hover {
+        color: $selectioncolor;
+    }
+    a {
+        color: $fontcolor;
+        text-decoration: none;
+    }
+}
+
+.righticons {
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: row;
+    padding-right: 5rem;
+}
+.cart:hover {
+    color: $selectioncolor;
+}
+.cart {
+    display: flex;
+    flex-direction: row;
+    margin-right: 3rem;
+    color: $fontcolor;
+    text-decoration: none;
+    p {
+        margin: 0.5rem;
+    }
+}
+.logout:hover {
+    color: $selectioncolor;
+}
+.logout {
+    display: flex;
+    flex-direction: row;
+    color: $fontcolor;
+    text-decoration: none;
+    p {
+        margin: 0.5rem;
     }
 }
 
