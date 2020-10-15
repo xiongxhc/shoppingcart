@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './index.scss';
 
 class Grid extends Component {
-
 	render() {
 		return (
 			<div className="grid">
@@ -18,10 +17,10 @@ class Grid extends Component {
 								</a>
 								<div>
 									<div className="pricetag">
-										{item.price}
+										<div>${item.price}</div>
 									</div>
 									<button className="addtocart">
-										Add To Cart
+										<div>Add To Cart</div>
 									</button>
 								</div>
 							</div>

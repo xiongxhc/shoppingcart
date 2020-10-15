@@ -32,9 +32,6 @@ $itembackgroundcolor: rgb(255, 255, 255);
     justify-content: space-between;
     border-radius: 0.2rem;
     background-color: $itembackgroundcolor;
-    a:hover p {
-        font-weight: 700;
-    }
     a {
         text-decoration: none;
         display: flex;
@@ -43,10 +40,46 @@ $itembackgroundcolor: rgb(255, 255, 255);
         p {
             color: $fontcolor;
             font-size: 1.2rem;
-            font-weight: 500;
+            font-weight: 800;
         }
         img {
             border-radius: 0.2rem;
         }
+    }
+}
+
+.pricetag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div {
+        color: #f55525;
+        margin: 0.6rem;
+        font-size: 2rem;
+        font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    }
+}
+
+.addtocart:hover {
+    border: solid;
+    border-width: 0.1rem;
+    border-color: #f55525;
+    background-color: white;
+    div {
+        color: #f55525;
+    }
+}
+.addtocart {
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 1rem;
+    width: 10rem;
+    height: 4rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #f55525;
+    div {
+        color: white;
+        font-weight: bold;
     }
 }
