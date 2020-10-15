@@ -16,7 +16,7 @@ class Grid extends Component {
 				/>
 				<div className="products">
 					{this.props.products.length !== 0 ? this.props.products.map(each => (
-						<Item key={each.id} item={each} />
+						<Item key={each.id} item={each} addToCart={this.props.addToCart}/>
 					)) : 
 						<div className="empty">
 							<p>Sorry, there is no product called "{this.props.search}"</p>

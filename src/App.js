@@ -12,7 +12,8 @@ class App extends React.Component {
 		this.state = {
 			products: data.Products,
 			search: "",
-			filter: ""
+			filter: "",
+			cart: []
 		};
 	}
 
@@ -41,16 +42,34 @@ class App extends React.Component {
 		}
 	}
 
+	addToCart = (item) => {
+		const currCart = this.state.cart.slice();
+		var hasItem = false;
+		currCart.forEach((i) => {
+			if(i.id === item.id) {
+				i.count++;
+				hasItem = true;
+			}
+		})
+		if(!hasItem) {
+			currCart.push({...item, count: 1})
+		}
+		this.setState({
+			cart: currCart
+		})
+	}
+
 	render() {
 		return (
 			<div className="App">
-				<Header />
+				<Header cart={this.state.cart}/>
 				<Grid 
 					search={this.state.search}
 					searching={this.searching}
 					filter={this.state.filter}
 					filtering={this.filtering}
 					products={this.state.products}
+					addToCart={this.addToCart}
 				/>
 				<Footer />
 			</div>

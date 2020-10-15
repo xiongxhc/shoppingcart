@@ -3,7 +3,7 @@ import './index.scss';
 import Title from './Title.js'
 import { CartIcon, Logout } from '../../icons'
 
-const Header = () => {
+const Header = ({cart}) => {
 	return (
 		<header className="header">
 			<div className="title">
@@ -12,7 +12,7 @@ const Header = () => {
 			<div className="righticons">
 				<a href='/' className="cart">
 					<CartIcon width={25} color={"#FFF"}/>
-					<p>(0)</p>
+					<p>({cart.length})</p>
 				</a>
 				<a href='/' className="logout">
 					<Logout width={25} color={"#FFF"}/>

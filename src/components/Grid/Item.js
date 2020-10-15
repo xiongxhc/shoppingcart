@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Item = ({item}) => {
+const Item = ({item, addToCart}) => {
     return (
         <div className="item">
             <a href={'#' + item.id}>
@@ -13,7 +13,7 @@ const Item = ({item}) => {
                 <div className="pricetag">
                     <div>${item.price}</div>
                 </div>
-                <button className="addtocart">
+                <button className="addtocart" onClick={() => addToCart(item)}>
                     <div>Add To Cart</div>
                 </button>
             </div>
