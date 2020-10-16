@@ -4,12 +4,12 @@ import './index.scss';
 class CartList extends Component {
 	render() {
 		return (
-			<div className="cart">
-				{/* <div className="products">
+			<div className="cartlist">
+				{/* <div className="cartproducts">
 					{this.props.products.length !== 0 ? this.props.products.map(each => (
 						<div key={each.id}>{each.name}</div>
 					)) : 
-						<div className="empty">
+						<div className="emptycart">
 							<p>Sorry, no product has been added to cart</p>
 						</div>
 					}

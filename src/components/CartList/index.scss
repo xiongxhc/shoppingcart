@@ -2,7 +2,7 @@ $fontcolor: rgb(20, 20, 20);
 $backgroundcolor: rgb(235, 235, 235);
 $itembackgroundcolor: rgb(255, 255, 255);
 
-.cart {
+.cartlist {
     flex: 10;
     color: $fontcolor;
     display: flex;
@@ -12,13 +12,13 @@ $itembackgroundcolor: rgb(255, 255, 255);
     background-color: $backgroundcolor;
 }
 
-.products {
+.cartproducts {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
-.empty {
+.emptycart {
     display: flex;
     align-items: center;
     justify-content: center;
