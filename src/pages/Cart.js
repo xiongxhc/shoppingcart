@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
+import CartList from '../components/CartList';
 import Footer from '../components/Footer';
 
 class Cart extends React.Component {
@@ -10,7 +11,7 @@ class Cart extends React.Component {
 		return (
 			<div className="Home">
 				<Header />
-				
+				{/* <CartList products={products}/> */}
 				<Footer />
 			</div>
 		);

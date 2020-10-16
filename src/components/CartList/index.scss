@@ -1,0 +1,98 @@
+$fontcolor: rgb(20, 20, 20);
+$backgroundcolor: rgb(235, 235, 235);
+$itembackgroundcolor: rgb(255, 255, 255);
+
+.cart {
+    flex: 10;
+    color: $fontcolor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $backgroundcolor;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+        font-size: 2rem;
+        padding: 2rem;
+        color: gray;
+    }
+}
+
+// .item:hover {
+//     box-shadow: 2px 2px 2px 2px #91919146;
+// }
+// .item {
+//     height: 100%;
+//     margin: 1rem;
+//     padding: 1rem;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: space-between;
+//     border-radius: 0.2rem;
+//     background-color: $itembackgroundcolor;
+//     a {
+//         text-decoration: none;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         p {
+//             color: $fontcolor;
+//             font-size: 1.2rem;
+//             font-weight: 800;
+//         }
+//         img {
+//             border-radius: 0.2rem;
+//         }
+//     }
+// }
+
+// .pricetag {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     div {
+//         color: #f55525;
+//         margin: 0.6rem;
+//         font-size: 2rem;
+//         font-family: Impact, 'Arial Narrow Bold', sans-serif;
+//     }
+// }
+
+// .remove:focus {
+//     outline:none;
+// }
+// .remove:hover {
+//     border: solid;
+//     border-width: 0.1rem;
+//     border-color: #f55525;
+//     background-color: white;
+//     div {
+//         color: #f55525;
+//     }
+// }
+// .remove {
+//     cursor: pointer;
+//     transition: all 0.3s;
+//     margin: 1rem;
+//     width: 10rem;
+//     height: 4rem;
+//     border: none;
+//     border-radius: 4px;
+//     background-color: #f55525;
+//     div {
+//         color: white;
+//         font-weight: bold;
+//     }
+// }
