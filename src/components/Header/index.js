@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import './index.scss';
 import Title from './Title.js'
 import { CartIcon, Logout } from '../../icons'
@@ -10,10 +11,12 @@ const Header = ({cart}) => {
 				<Title text={"EStore"} />
 			</div>
 			<div className="righticons">
-				<a href='/' className="cart">
-					<CartIcon width={25} color={"#FFF"}/>
-					<p>({cart.length})</p>
-				</a>
+				{cart ? 
+					<Link to='/cart' className="cart">
+						<CartIcon width={25} color={"#FFF"}/>
+						<p>({cart.length})</p>
+					</Link> : <div />
+				}
 				<a href='/' className="logout">
 					<Logout width={25} color={"#FFF"}/>
 					<p>Logout</p>
