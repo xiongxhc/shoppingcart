@@ -68,7 +68,6 @@ class App extends React.Component {
 					searching={this.searching}
 					filter={this.state.filter}
 					filtering={this.filtering}
-					// products={this.state.products}
 					addToCart={this.addToCart}
 				/>
 				<Footer />
