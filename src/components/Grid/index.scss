@@ -59,6 +59,32 @@ $itembackgroundcolor: rgb(255, 255, 255);
     }
 }
 
+.noserver {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50rem;
+    p {
+        font-size: 2rem;
+        padding: 2rem;
+        color: gray;
+    }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.loader {
+    border: 1rem solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 1rem solid grey;
+    width: 2rem;
+    height: 2rem;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+
 .item:hover {
     box-shadow: 2px 2px 2px 2px #91919146;
 }

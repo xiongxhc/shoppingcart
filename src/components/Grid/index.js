@@ -16,8 +16,9 @@ class Grid extends Component {
 		return (
 			<div className="grid">
 				{!filterItems ? 
-					<div>
-						Loading
+					<div className="noserver">
+						<div className="loader"/>
+						<p>Please connect to server...</p>
 					</div> :
 					<React.Fragment>
 						<Bar />
