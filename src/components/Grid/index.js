@@ -14,24 +14,18 @@ class Grid extends Component {
 	render() {
 		return (
 			<div className="grid">
-				{!this.props.products ? 
+				{!this.props.filterItems ? 
 					<div>
 						Loading
 					</div> :
 					<React.Fragment>
-						<Bar
-							count={this.props.products.length}
-							search={this.props.search}
-							searching={this.props.searching}
-							filter={this.props.filter}
-							filtering={this.props.filtering}
-						/>
+						<Bar />
 						<div className="products">
-							{this.props.products.length !== 0 ? this.props.products.map(each => (
+							{this.props.filterItems.length !== 0 ? this.props.filterItems.map(each => (
 								<Item key={each.id} item={each} addToCart={this.props.addToCart} />
 							)) :
 								<div className="empty">
-									<p>Sorry, there is no product called "{this.props.search}"</p>
+									<p>Sorry, there is no product called "{this.props.text}"</p>
 								</div>
 							}
 						</div>
@@ -45,7 +39,8 @@ class Grid extends Component {
 
 const mapStateToProps = (state) => {
 	return {
-		products: state.products.items,
+		text: state.products.text,
+		filterItems: state.products.filterItems,
 	};
 }
 

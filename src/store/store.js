@@ -6,12 +6,14 @@ const initialState = {
 
 }
 
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
 const store = createStore(
     combineReducers({
         products: productsReducer,
     }),
     initialState,
-    compose(applyMiddleware(thunk))
+    composeEnhancers(applyMiddleware(thunk)),
 )
 
 export default store
