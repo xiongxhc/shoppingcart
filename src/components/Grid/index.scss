@@ -40,6 +40,7 @@ $itembackgroundcolor: rgb(255, 255, 255);
     justify-content: center;
     flex-direction: column;
     background-color: $backgroundcolor;
+    margin-top: 7rem;
 }
 
 .products {
@@ -47,11 +48,13 @@ $itembackgroundcolor: rgb(255, 255, 255);
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    min-height: 60rem;
 }
 .empty {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 60rem;
     p {
         font-size: 2rem;
         padding: 2rem;
@@ -63,7 +66,7 @@ $itembackgroundcolor: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50rem;
+    min-height: 60rem;
     p {
         font-size: 2rem;
         padding: 2rem;

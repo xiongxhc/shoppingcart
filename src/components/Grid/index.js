@@ -27,6 +27,7 @@ class Grid extends Component {
 								<Item key={each.id} item={each} />
 							)) :
 								<div className="empty">
+									<div className="loader"/>
 									<p>Sorry, there is no product called "{text}"</p>
 								</div>
 							}

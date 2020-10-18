@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 class Cart extends React.Component {
 	render() {
 		return (
-			<div className="Home">
+			<div className="App">
 				<Header />
 				<CartList />
 				<Footer />

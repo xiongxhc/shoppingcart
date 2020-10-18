@@ -4,9 +4,11 @@ $itembackgroundcolor: rgb(255, 255, 255);
 
 .cartlist {
     flex: 10;
+    min-height: 60rem;
+    margin-top: 7rem;
     color: $fontcolor;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: row;
     background-color: $backgroundcolor;
@@ -20,7 +22,7 @@ $itembackgroundcolor: rgb(255, 255, 255);
     justify-content: center;
 }
 .emptycart {
-    height: 50rem;
+    min-height: 60rem;
     display: flex;
     align-items: center;
     justify-content: center;
