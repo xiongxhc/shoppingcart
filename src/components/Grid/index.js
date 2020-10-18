@@ -12,20 +12,21 @@ class Grid extends Component {
 	}
 	
 	render() {
+		const { text, filterItems } = this.props
 		return (
 			<div className="grid">
-				{!this.props.filterItems ? 
+				{!filterItems ? 
 					<div>
 						Loading
 					</div> :
 					<React.Fragment>
 						<Bar />
 						<div className="products">
-							{this.props.filterItems.length !== 0 ? this.props.filterItems.map(each => (
-								<Item key={each.id} item={each} addToCart={this.props.addToCart} />
+							{filterItems.length !== 0 ? filterItems.map(each => (
+								<Item key={each.id} item={each} />
 							)) :
 								<div className="empty">
-									<p>Sorry, there is no product called "{this.props.text}"</p>
+									<p>Sorry, there is no product called "{text}"</p>
 								</div>
 							}
 						</div>
