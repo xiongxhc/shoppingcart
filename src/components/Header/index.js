@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
-import './index.scss';
+import './index.scss'
 import Title from './Title.js'
 import { CartIcon, Logout } from '../../icons'
 

@@ -3,8 +3,6 @@ import Header from './components/Header';
 import Grid from './components/Grid';
 import Footer from './components/Footer';
 
-import data from './db/products.json'
-
 class App extends React.Component {
 
 	constructor() {

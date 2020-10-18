@@ -7,12 +7,12 @@ export const cartReducer = ( state = {
     switch(action.type) {
         case ADD_TO_CART: 
             return {
-                cartItems: action.payload.items
+                cartItems: action.payload.cartItems
             }
 
         case REMOVE_FROM_CART: 
             return {
-                cartItems: action.payload.items
+                cartItems: action.payload.cartItems
             }
 
         default: 

@@ -14,6 +14,7 @@ $itembackgroundcolor: rgb(255, 255, 255);
 
 .cartproducts {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -29,70 +30,50 @@ $itembackgroundcolor: rgb(255, 255, 255);
     }
 }
 
-// .item:hover {
-//     box-shadow: 2px 2px 2px 2px #91919146;
-// }
-// .item {
-//     height: 100%;
-//     margin: 1rem;
-//     padding: 1rem;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: space-between;
-//     border-radius: 0.2rem;
-//     background-color: $itembackgroundcolor;
-//     a {
-//         text-decoration: none;
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//         p {
-//             color: $fontcolor;
-//             font-size: 1.2rem;
-//             font-weight: 800;
-//         }
-//         img {
-//             border-radius: 0.2rem;
-//         }
-//     }
-// }
+.cartitem:hover {
+    box-shadow: 2px 2px 2px 2px #91919146;
+}
+.cartitem {
+    width: 90rem;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.2rem;
+    background-color: $itembackgroundcolor;
+    a {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            max-width:30%;
+            border-radius: 0.2rem;
+        }
+    }
+}
 
-// .pricetag {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     div {
-//         color: #f55525;
-//         margin: 0.6rem;
-//         font-size: 2rem;
-//         font-family: Impact, 'Arial Narrow Bold', sans-serif;
-//     }
-// }
-
-// .remove:focus {
-//     outline:none;
-// }
-// .remove:hover {
-//     border: solid;
-//     border-width: 0.1rem;
-//     border-color: #f55525;
-//     background-color: white;
-//     div {
-//         color: #f55525;
-//     }
-// }
-// .remove {
-//     cursor: pointer;
-//     transition: all 0.3s;
-//     margin: 1rem;
-//     width: 10rem;
-//     height: 4rem;
-//     border: none;
-//     border-radius: 4px;
-//     background-color: #f55525;
-//     div {
-//         color: white;
-//         font-weight: bold;
-//     }
-// }
+.itemname {
+    width: 20rem;
+    color: $fontcolor;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+.quantity {
+    width: 10rem;
+    font-weight: 800;
+}
+.buttonset {
+    width: 10rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    button {
+        margin: 0.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
