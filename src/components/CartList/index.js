@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './index.scss';
 import { addToCart, removeFromCart } from '../../action/cartActions.js'
+import CartItem from './CartItem.js'
 
 class CartList extends Component {
 	render() {
@@ -10,7 +11,7 @@ class CartList extends Component {
 			<div className="cartlist">
 				<div className="cartproducts">
 					{cartItems.length !== 0 ? cartItems.map(each => (
-						<div key={each.id}>{each.name}</div>
+						<CartItem key={each.id} item={each} />
 					)) : 
 						<div className="emptycart">
 							<p>Your cart is empty</p>

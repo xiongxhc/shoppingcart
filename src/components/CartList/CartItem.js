@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { addToCart } from '../../action/cartActions.js'
 
-class Item extends Component {
+class cartItem extends Component {
     render() {
         const { item, addToCart } = this.props
         return (
@@ -30,4 +30,4 @@ const mapStateToProps = (state) => {
 	return {};
 }
 
-export default connect(mapStateToProps,{addToCart})(Item);
+export default connect(mapStateToProps,{addToCart})(cartItem);

@@ -14,12 +14,10 @@ class Header extends Component {
 					<Title text={"EStore"} />
 				</div>
 				<div className="righticons">
-					{cartItems ? 
-						<Link to='/cart' className="cart">
-							<CartIcon width={25} color={"#FFF"}/>
-							<p>({cartItems.length})</p>
-						</Link> : <div />
-					}
+					<Link to='/cart' className="cart">
+						<CartIcon width={25} color={"#FFF"}/>
+						<p>({cartItems.length})</p>
+					</Link> : <div />
 					<a href='/' className="logout">
 						<Logout width={25} color={"#FFF"}/>
 						<p>Logout</p>
