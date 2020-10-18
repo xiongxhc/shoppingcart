@@ -1,22 +1,31 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import './index.scss';
+import { addToCart, removeFromCart } from '../../action/cartActions.js'
 
 class CartList extends Component {
 	render() {
+		const { cartItems } = this.props
 		return (
 			<div className="cartlist">
-				{/* <div className="cartproducts">
-					{this.props.products.length !== 0 ? this.props.products.map(each => (
+				<div className="cartproducts">
+					{cartItems.length !== 0 ? cartItems.map(each => (
 						<div key={each.id}>{each.name}</div>
 					)) : 
 						<div className="emptycart">
-							<p>Sorry, no product has been added to cart</p>
+							<p>Your cart is empty</p>
 						</div>
 					}
-				</div> */}
+				</div>
 			</div>
 		);
 	}
 }
 
-export default CartList;
+const mapStateToProps = (state) => {
+	return {
+		cartItems: state.cart.cartItems,
+	};
+}
+
+export default connect(mapStateToProps,{addToCart, removeFromCart})(CartList);

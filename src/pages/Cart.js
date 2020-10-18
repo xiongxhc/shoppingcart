@@ -5,13 +5,10 @@ import Footer from '../components/Footer';
 
 class Cart extends React.Component {
 	render() {
-        const {
-            cart, search, searching, filter, filtering, products, addToCart
-        } = this.props
 		return (
 			<div className="Home">
 				<Header />
-				{/* <CartList products={products}/> */}
+				<CartList />
 				<Footer />
 			</div>
 		);
