@@ -4,10 +4,11 @@ import { connect } from 'react-redux'
 import './index.scss'
 import Title from './Title.js'
 import { CartIcon, Logout } from '../../icons'
+import { userLogin, userLogout } from '../../action/userAction.js'
 
 class Header extends Component {
 	render() {
-		const { cartItems } = this.props
+		const { login, cartItems, userLogin, userLogout } = this.props
 		return (
 			<header className="header">
 				<div className="title">
@@ -17,11 +18,17 @@ class Header extends Component {
 					<Link to='/cart' className="cart">
 						<CartIcon width={25} color={"#FFF"}/>
 						<p>({cartItems.length})</p>
-					</Link> : <div />
-					<a href='/' className="logout">
-						<Logout width={25} color={"#FFF"}/>
-						<p>Logout</p>
-					</a>
+					</Link>
+					{login ? 
+						<div className="logout" onClick={() => userLogout()}>
+							<Logout width={25} color={"#FFF"}/>
+							<p>Logout</p>
+						</div> :
+						<div className="login" onClick={() => userLogin()}>
+							<p>Login</p>
+						</div>
+					}
+					
 				</div>
 			</header>
 		);
@@ -30,8 +37,9 @@ class Header extends Component {
 
 const mapStateToProps = (state) => {
 	return {
+		login: state.user.login,
 		cartItems: state.cart.cartItems,
 	};
 }
 
-export default connect(mapStateToProps)(Header);
+export default connect(mapStateToProps, {userLogin, userLogout})(Header);

@@ -46,10 +46,29 @@ $backgroundcolor: rgb(9, 46, 48);
     color: $selectioncolor;
 }
 .logout {
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     color: $fontcolor;
     text-decoration: none;
+    p {
+        margin: 0.5rem;
+    }
+}
+
+.login:hover {
+    background-color: white;
+    color: $backgroundcolor;
+}
+.login {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    color: $fontcolor;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-radius: 0.5rem;
     p {
         margin: 0.5rem;
     }

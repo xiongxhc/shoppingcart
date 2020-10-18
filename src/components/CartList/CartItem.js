@@ -8,7 +8,7 @@ class CartItem extends Component {
         const { item, addToCart, removeFromCart, cartItems } = this.props
         var itemCount = item.count
         cartItems.find(each => {
-            if(each.id == item.id) {
+            if(each.id === item.id) {
                 itemCount = each.count
             }
         })
