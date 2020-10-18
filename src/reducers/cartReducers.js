@@ -1,7 +1,7 @@
 const { ADD_TO_CART, REMOVE_FROM_CART } = require("../types");
 
 export const cartReducer = ( state = {
-    cartItems: localStorage.getItem("cartItems") || []
+    cartItems: JSON.parse(localStorage.getItem("cartItems") || "[]" )
 }, action ) => {
 
     switch(action.type) {

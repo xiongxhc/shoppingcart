@@ -18,6 +18,9 @@ class CartList extends Component {
 						</div>
 					}
 				</div>
+				<div>
+					CheckOut
+				</div>
 			</div>
 		);
 	}
